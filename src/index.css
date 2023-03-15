@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        --primary: 166 0 255;
+        --secondary: 237 28 99;
+        --accent: 247 229 30;
+        --content: 0 0 0;
+        --background: 236 239 241;
+        --edge: 238 238 238;
+    }
+}

@@ -11,4 +11,10 @@
         --background: 236 239 241;
         --edge: 238 238 238;
     }
+    h2 {
+        @apply text-2xl font-bold;
+    }
+    h3 {
+        @apply text-lg font-bold;
+    }
 }

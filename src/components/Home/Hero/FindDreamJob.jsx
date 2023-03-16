@@ -11,22 +11,27 @@ const FindDreamJob = () => {
                     <IoBriefcase />
                     Write your occupation
                 </label>
-                <input type="text" />
+                <input type="text" placeholder="Driver, Electrician etc" />
             </div>
             <div className="flex flex-col">
                 <label className="flex items-center gap-2 mb-1.5">
                     <GiWorld />
                     Skilled Category
                 </label>
-                <select></select>
+                <select>
+                    <option value="">Select Skill</option>
+                </select>
             </div>
             <div className="flex flex-col">
                 <label className="flex items-center gap-2 mb-1.5">
                     <SiGooglemaps />
                     Country
                 </label>
-                <select></select>
+                <select>
+                    <option value="">Select Country</option>
+                </select>
             </div>
+            <button className="bg-[#FBC02D] font-medium">Search</button>
         </div>
     );
 };

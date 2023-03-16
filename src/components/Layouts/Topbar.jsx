@@ -4,7 +4,7 @@ import Youtube from "../../assets/icons/youtube.png";
 
 const Topbar = () => {
     return (
-        <div className="hidden lg:flex h-10 bg-background justify-between items-center">
+        <div className="container hidden lg:flex h-10 justify-between items-center">
             <div className="flex justify-between items-center gap-8">
                 <TopMenu last />
             </div>

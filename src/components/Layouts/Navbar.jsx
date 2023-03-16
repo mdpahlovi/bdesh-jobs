@@ -12,8 +12,8 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className="bg-white top-0 z-20 border-b border-base-content/10">
-            <div className="my-container h-[58px] flex justify-between items-center">
+        <nav className="bg-background-sec top-0 z-20 border-b border-base-content/10">
+            <div className="container h-[58px] flex justify-between items-center">
                 <div className="flex lg:hidden items-center space-x-5">
                     <IoMenu size={28} onClick={() => setOpen(true)} />
                 </div>
@@ -27,7 +27,7 @@ const Navbar = () => {
             </div>
             {/* Mobile Menu */}
             <div
-                className={`fixed w-full h-full top-0 bg-white transition-all duration-500 ${
+                className={`fixed w-full h-full top-0 bg-background-sec transition-all duration-500 ${
                     open ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
                 } lg:hidden`}
             >

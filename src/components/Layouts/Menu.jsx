@@ -3,9 +3,9 @@ import { IoCall } from "react-icons/io5";
 import { MdDoubleArrow } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
-const Menu = () => {
-    const nav_link = `flex items-center gap-1 ${({ isActive }) => (isActive ? "" : "")}`;
+const nav_link = ({ isActive }) => (isActive ? "flex items-center gap-1 text-secondary" : "flex items-center gap-1 hover:text-secondary");
 
+const Menu = () => {
     return (
         <>
             <NavLink to="/" className={nav_link} end>
@@ -19,22 +19,22 @@ const Menu = () => {
 };
 
 const TopMenu = ({ last }) => {
-    const nav_link = `flex items-center gap-1 ${({ isActive }) => (isActive ? "" : "")}`;
-
     return (
         <>
-            <NavLink to="/" className={nav_link} end>
+            <NavLink to="/bd-jobs" className={nav_link}>
                 BD Jobs
             </NavLink>
-            <NavLink to="/" className={nav_link} end>
+            <NavLink to="/jobs" className={nav_link}>
                 Jobs
             </NavLink>
-            <NavLink to="/" className={nav_link} end>
+            <NavLink to="/sob-seeker-account" className={nav_link}>
                 Job Seeker Account
             </NavLink>
-            <NavLink to="/" className={`${nav_link} ${last ? "px-4 h-10 bg-[#D4D8D9]" : ""}`} end>
-                Recruitment Agency / Foreign Employers
-                <MdDoubleArrow size={20} />
+            <NavLink to="/recruitment-agency" className={nav_link}>
+                <span className={`flex items-center gap-1 ${last ? "px-4 h-10 bg-edge" : ""}`}>
+                    Recruitment Agency / Foreign Employers
+                    <MdDoubleArrow size={20} />
+                </span>
             </NavLink>
         </>
     );

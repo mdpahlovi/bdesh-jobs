@@ -36,4 +36,7 @@
     .container {
         @apply px-6 mx-auto;
     }
+    .box {
+        @apply bg-background-sec shadow rounded-lg px-5 py-4;
+    }
 }

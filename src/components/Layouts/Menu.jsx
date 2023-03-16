@@ -1,6 +1,6 @@
-import { HiUserCircle } from "react-icons/hi2";
-import { IoCall } from "react-icons/io5";
+import { HiHome } from "react-icons/hi2";
 import { MdDoubleArrow } from "react-icons/md";
+import { GiNotebook } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
 
 const nav_link = ({ isActive }) => (isActive ? "flex items-center gap-1 text-secondary" : "flex items-center gap-1 hover:text-secondary");
@@ -9,10 +9,10 @@ const Menu = () => {
     return (
         <>
             <NavLink to="/" className={nav_link} end>
-                <HiUserCircle size={24} /> Sign in / Create Account
+                <HiHome size={24} /> Home
             </NavLink>
-            <NavLink to="/category" className={nav_link}>
-                <IoCall size={24} /> Contact Us
+            <NavLink to="/guides" className={nav_link}>
+                <GiNotebook size={24} /> User Guides
             </NavLink>
         </>
     );

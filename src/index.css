@@ -4,17 +4,31 @@
 
 @layer base {
     :root {
-        --primary: 166 0 255;
-        --secondary: 237 28 99;
-        --accent: 247 229 30;
+        --primary: 21 101 192;
+        --secondary: 51 122 183;
+        --accent: 245 0 87;
         --content: 0 0 0;
         --background: 236 239 241;
-        --edge: 238 238 238;
+        --background-sec: 255 255 255;
+        --background: 236 239 241;
+        --edge: 212 216 217;
+    }
+    body {
+        @apply bg-background;
     }
     h2 {
         @apply text-2xl font-bold;
     }
     h3 {
         @apply text-lg font-bold;
+    }
+    hr {
+        @apply border-edge;
+    }
+}
+
+@layer components {
+    .container {
+        @apply px-6 mx-auto;
     }
 }

@@ -3,6 +3,17 @@ import GettingBirthCertificate from "../../assets/guides_blogs/getting_birth_cer
 import MakePassport from "../../assets/guides_blogs/make_the_passport.png";
 import RegisterName from "../../assets/guides_blogs/register_the_name.png";
 import GetCitizenCertificate from "../../assets/guides_blogs/to_get_citizen_certificate.png";
+import RelevantWork1 from "../../assets/relevant_work/relevant_work1.png";
+import RelevantWork2 from "../../assets/relevant_work/relevant_work2.png";
+import RelevantWork3 from "../../assets/relevant_work/relevant_work3.png";
+import RelevantWork4 from "../../assets/relevant_work/relevant_work4.png";
+import RelevantWork5 from "../../assets/relevant_work/relevant_work5.png";
+import RelevantWork6 from "../../assets/relevant_work/relevant_work6.png";
+import RelevantWork7 from "../../assets/relevant_work/relevant_work7.png";
+import RelevantWork8 from "../../assets/relevant_work/relevant_work8.png";
+import RelevantWork9 from "../../assets/relevant_work/relevant_work9.png";
+import RelevantWork10 from "../../assets/relevant_work/relevant_work10.png";
+import RelevantWork11 from "../../assets/relevant_work/relevant_work11.png";
 
 export const side_penal_data = [
     {
@@ -77,4 +88,18 @@ export const guides_blog_data = [
         details:
             "<p>পাসপোর্ট হল বিদেশে যাওয়ার জন্য বাংলাদেশ সরকারের অনুমোদিত একটি পরিচয়পত্র। পাসপোর্ট না থাকলে আপনি কখনও বিদেশে যেতে পারবেন না। পাসপোর্টের মাধ্যমে বাংলাদেশ সরকার আপনাকে বিদেশে যাওয়ার অনুমতি দেন। তবে যারা নতুন পাসপোর্ট করবেন বা পাসপোর্ট সংশোধন অথবা নবায়ন করবেন তারা অবশ্যই মেশিন রিডেবল পাসপোর্ট করবেন। এখানে উল্লেখ্য যে, ২০১২ সালের পর থেকে হাতে লেখা পাসপোর্ট কোথাও গ্রহণ করা হয় না। তাই যাদের কাছে হাতে লেখা পাসপোর্ট রয়েছে তারা মেশিন রিডেবল পাসপোর্ট করার জন্য এখনই উদ্যোগ নিন। যারা বিদেশে রয়েছেন তারা বিদেশে অবস্থিত বাংলাদেশের প্রত্যেকটি দূতাবাসের মাধ্যমে মেশিন রিডেবল পাসপোর্ট করাতে পারবেন।</p>",
     },
+];
+
+export const relevent_works_data = [
+    { image: RelevantWork1, link: "#register_name", text: "নাম নিবন্ধন" },
+    { image: RelevantWork2, link: "#create_nid_birthcertificate", text: "নাগরিক ও জন্মসনদ তৈরি" },
+    { image: RelevantWork3, link: "#get_certificate", text: "নাগরিক সনদপত্র পেতে করণীয়" },
+    { image: RelevantWork4, link: "#get_birthCertificate", text: "জন্ম সনদপত্র পেতে করণীয়" },
+    { image: RelevantWork5, link: "#make_passport", text: "পাসপোর্ট তৈরি" },
+    { image: RelevantWork6, link: "#visaProcessing_check", text: "ভিসা সংগ্রহ ও যাচাই" },
+    { image: RelevantWork7, link: "#job_agreement", text: "চাকরির চুক্তিপত্র" },
+    { image: RelevantWork8, link: "#create_bankAccount", text: "ব্যাংক অ্যাকাউন্ট তৈরি" },
+    { image: RelevantWork9, link: "#health_checking", text: "স্বাস্থ্য পরীক্ষা" },
+    { image: RelevantWork10, link: "#bmit_briefing", text: "বিএমইটি'র ব্রিফিং" },
+    { image: RelevantWork11, link: "#smartCard_clearanceCard", text: "স্মার্ট বা ইমিগ্রেশন ক্লিয়ারেন্স কার্ড" },
 ];

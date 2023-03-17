@@ -45,4 +45,7 @@
     .box {
         @apply bg-background-sec shadow rounded-lg px-5 py-4;
     }
+    .bg-overly {
+        @apply absolute w-full h-full inset-0 -z-[1];
+    }
 }

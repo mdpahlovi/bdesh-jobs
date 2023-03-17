@@ -26,6 +26,7 @@ module.exports = {
             backgroundImage: {
                 hero: "url('/src/assets/city.png')",
                 header: "url('/src/assets/header.png')",
+                country: "url('/src/assets/bg-country.png')",
             },
         },
     },

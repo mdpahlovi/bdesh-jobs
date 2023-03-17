@@ -23,6 +23,10 @@ module.exports = {
                 "background-sec": "rgb(var(--background-sec) / <alpha-value>)",
                 edge: "rgb(var(--edge) / <alpha-value>)",
             },
+            backgroundImage: {
+                hero: "url('/src/assets/city.png')",
+                header: "url('/src/assets/header.png')",
+            },
         },
     },
     plugins: [],

@@ -19,11 +19,11 @@ const CountryVacancy = () => {
                     <div key={index}>{`${country} (${vacancy})`}</div>
                 ))}
                 <div>All Countries</div>
-                <div className="w-44 flex justify-center items-center bg-background-sec rounded-lg gap-2 px-4 py-2.5">
+                <div className="w-44 flex justify-center items-center bg-[#FFDC79] rounded-lg gap-2 px-4 py-2.5">
                     <div>
                         <img src={SubmitBiodata} alt="" />
                     </div>
-                    <span className="text-sm">Submit your Biodata</span>
+                    <span className="text-sm text-content font-bold">Submit your Biodata</span>
                 </div>
                 <div className="w-44 flex flex-col justify-center items-center bg-background-sec rounded-lg px-4 py-2.5">
                     <div>

@@ -7,7 +7,7 @@ const Test = () => {
     return (
         <main>
             <Header title="বিদেশে যাওয়ার প্রাসঙ্গিক কাজ" />
-            <div className="container grid grid-cols-[1fr_16.5rem] gap-8 my-8">
+            <div className="container grid grid-cols-1 md:grid-cols-[1fr_16.5rem] gap-8 my-8">
                 <DetailsBlog />
                 <SidePenal />
             </div>

@@ -45,7 +45,7 @@ const SidePenal = () => {
                                                         {c_text}
                                                     </a>
                                                 ))}
-                                            </Disclosure.Panel>{" "}
+                                            </Disclosure.Panel>
                                         </>
                                     )}
                                 </Disclosure>

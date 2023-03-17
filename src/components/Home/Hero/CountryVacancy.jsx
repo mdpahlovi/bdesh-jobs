@@ -1,21 +1,13 @@
 import SubmitBiodata from "../../../assets/icons/submit_biodata.png";
 import LogoOfBdeshjaatra from "../../../assets/logo-of-bdeshjaatra.svg";
-
-const data = [
-    { country: "Libya", vacancy: "700" },
-    { country: "Saudi Arabia", vacancy: "222" },
-    { country: "Kuwait", vacancy: "100" },
-    { country: "Oman", vacancy: "100" },
-    { country: "Turkey", vacancy: "71" },
-    { country: "United Arab Emirates", vacancy: "47" },
-];
+import { jobs_in_country } from "../Datas";
 
 const CountryVacancy = () => {
     return (
         <div className="my-7">
             <h2 className="mb-5">Country wise vacancies</h2>
             <div className="space-y-1.5">
-                {data.map(({ country, vacancy }, index) => (
+                {jobs_in_country.slice(0, 6).map(({ country, vacancy }, index) => (
                     <div key={index}>{`${country} (${vacancy})`}</div>
                 ))}
                 <div>All Countries</div>

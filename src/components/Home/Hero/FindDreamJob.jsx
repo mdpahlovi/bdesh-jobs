@@ -4,7 +4,7 @@ import { SiGooglemaps } from "react-icons/si";
 
 const FindDreamJob = () => {
     return (
-        <div className="row-start-2 lg:row-auto my-7 space-y-4">
+        <div className="row-start-2 lg:row-auto mb-7 mt-6 sm:mt-7 space-y-4">
             <h2 className="mb-5">Find your dream job</h2>
             <div className="flex flex-col">
                 <label className="flex items-center gap-2 mb-1.5">

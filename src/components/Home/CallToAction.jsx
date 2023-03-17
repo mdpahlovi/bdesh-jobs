@@ -13,6 +13,23 @@ const OrgBox = ({ link, image }) => {
 };
 
 const CallToAction = () => {
+    const params = {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        style: {
+            "--swiper-pagination-bullet-size": "12px",
+        },
+        pagination: {
+            clickable: true,
+        },
+        modules: [Pagination],
+        breakpoints: {
+            448: {
+                slidesPerView: 2,
+            },
+        },
+    };
+
     return (
         <div className="container my-14 flex flex-col lg:flex-row gap-10">
             <div>
@@ -24,19 +41,7 @@ const CallToAction = () => {
             <div>
                 <h2 className="mb-6">Jointly Organized</h2>
                 <div className="w-full lg:w-[368px] mr-auto">
-                    <Swiper
-                        slidesPerView={1}
-                        spaceBetween={16}
-                        pagination={{
-                            clickable: true,
-                        }}
-                        modules={[Pagination]}
-                        breakpoints={{
-                            448: {
-                                slidesPerView: 2,
-                            },
-                        }}
-                    >
+                    <Swiper {...params}>
                         <SwiperSlide>
                             <OrgBox link="http://www.bdjobs.com/bn/defaultbn.asp" image={Bdjobs} />
                         </SwiperSlide>

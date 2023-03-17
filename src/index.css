@@ -49,3 +49,13 @@
         @apply absolute w-full h-full inset-0 -z-[1];
     }
 }
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 12px 17.84px;
+    border-radius: 50%;
+}
+.swiper-pagination-bullet {
+    border: solid 2px white;
+}

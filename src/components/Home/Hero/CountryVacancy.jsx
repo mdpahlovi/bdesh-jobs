@@ -4,7 +4,7 @@ import { jobs_in_country } from "../Datas";
 
 const CountryVacancy = () => {
     return (
-        <div className="my-7">
+        <div className="mb-7 -mt-1 sm:mt-7">
             <h2 className="mb-5">Country wise vacancies</h2>
             <div className="space-y-1.5">
                 {jobs_in_country.slice(0, 6).map(({ country, vacancy }, index) => (

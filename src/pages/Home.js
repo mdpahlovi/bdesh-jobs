@@ -11,7 +11,7 @@ const Home = () => {
         <main>
             <header className="relative bg-hero bg-bottom bg-repeat-x z-[1] text-white">
                 <div className="bg-overly bg-primary/80"></div>
-                <div className="container grid grid-cols-2 lg:grid-cols-[1fr_2fr_1fr] gap-6">
+                <div className="container grid grid-cols-1 sm:grid-cols-[48%_52%] lg:grid-cols-[25%_50%_25%] sm:gap-6">
                     <FindDreamJob />
                     <Slider />
                     <CountryVacancy />

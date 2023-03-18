@@ -3,6 +3,7 @@ import React from "react";
 import { HiTag } from "react-icons/hi2";
 import MakeBio from "../../assets/cta/make-bio.png";
 import SentCV from "../../assets/cta/thousand_cv.png";
+import { generals, spacial_categories } from "./Datas";
 
 const Category = () => {
     return (
@@ -31,20 +32,8 @@ const Category = () => {
                     </Tab.List>
                 </div>
                 <Tab.Panels>
-                    <Tab.Panel className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4">
-                        {[...Array(12)].map((a, i) => (
-                            <div key={i} className="box h-max">
-                                Pahlovi
-                            </div>
-                        ))}
-                    </Tab.Panel>
-                    <Tab.Panel className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4">
-                        {[...Array(12)].map((a, i) => (
-                            <div key={i} className="box h-max">
-                                Hanna
-                            </div>
-                        ))}
-                    </Tab.Panel>
+                    <TabPanel array={spacial_categories} />
+                    <TabPanel array={generals} />
                 </Tab.Panels>
             </Tab.Group>
             <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -67,6 +56,18 @@ export default Category;
 // Utilities
 const classNames = (...classes) => {
     return classes.filter(Boolean).join(" ");
+};
+const TabPanel = ({ array }) => {
+    return (
+        <Tab.Panel className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4">
+            {array.map(({ image, text }, i) => (
+                <div key={i} className="box flex items-center gap-2">
+                    <img src={image} alt="" />
+                    <h5 className="font-medium">{text}</h5>
+                </div>
+            ))}
+        </Tab.Panel>
+    );
 };
 const LinkButton = ({ link }) => {
     return (

@@ -1,5 +1,5 @@
 import SubmitBiodata from "../../../assets/icons/submit_biodata.png";
-import LogoOfBdeshjaatra from "../../../assets/logo-of-bdeshjaatra.svg";
+import LogoOfBdeshjaatra from "../../../assets/logos/logo-of-bdeshjaatra.svg";
 import { jobs_in_country } from "../Datas";
 
 const CountryVacancy = () => {

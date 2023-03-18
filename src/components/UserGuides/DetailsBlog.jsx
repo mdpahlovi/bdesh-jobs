@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { guides_blog_data, relevent_works_data } from "./Data";
 
 const DetailsBlog = () => {
@@ -15,7 +16,7 @@ const DetailsBlog = () => {
 
                 <div className="mt-10 flex flex-wrap justify-between w-[54rem] overflow-x-auto">
                     {relevent_works_data.map(({ image, text, link }, index) => (
-                        <div className="px-4 pb-10 text-center flex flex-col items-center max-w-[10rem]">
+                        <div key={index} className="px-4 pb-10 text-center flex flex-col items-center max-w-[10rem]">
                             <div className="work-icon">
                                 <img src={image} alt="" />
                             </div>
@@ -29,8 +30,8 @@ const DetailsBlog = () => {
             </div>
             <hr className="my-8" />
             {guides_blog_data.map(({ image, title, details, note }, index) => (
-                <>
-                    <div key={index}>
+                <Fragment key={index}>
+                    <div>
                         <img
                             src={image}
                             alt=""
@@ -45,8 +46,8 @@ const DetailsBlog = () => {
                         </div>
                         {note && <p className="mt-5 p-5 bg-[#fff4d4] rounded-lg text-sm">{note}</p>}
                     </div>
-                    <hr className={`my-8 ${index + 1 === guides_blog_data.length && "hidden"}`} />
-                </>
+                    <hr className={`my-8 ${index + 1 === guides_blog_data.length ? "hidden" : ""}`} />
+                </Fragment>
             ))}
         </main>
     );

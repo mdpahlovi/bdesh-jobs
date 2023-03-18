@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/logo.svg";
-import JointVenture from "../../assets/Joint_venture.png";
+import Logo from "../../assets/logos/logo.svg";
+import JointVenture from "../../assets/logos/Joint_venture.png";
 import { HiOutlineArrowSmallLeft } from "react-icons/hi2";
 import { IoMenu } from "react-icons/io5";
 import { Menu, TopMenu } from "./Menu";

@@ -13,14 +13,14 @@ const Home = () => {
         <main>
             <header className="relative bg-hero bg-bottom bg-repeat-x z-[1] text-white">
                 <div className="bg-overly bg-primary/80"></div>
-                <div className="container grid grid-cols-1 sm:grid-cols-[48%_52%] lg:grid-cols-[25%_50%_25%] sm:gap-6">
+                <div className="container grid grid-cols-1 sm:grid-cols-[48%_52%] lg:grid-cols-[25%_50%_25%] lg:gap-6">
                     <FindDreamJob />
                     <Slider />
                     <CountryVacancy />
                 </div>
             </header>
             <Stats />
-            <Body className="mt-32 mb-14">
+            <Body className="mt-40 sm:mt-32 mb-14">
                 <Category />
             </Body>
             <JobsInCountry />

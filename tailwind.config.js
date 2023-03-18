@@ -23,9 +23,9 @@ module.exports = {
                 edge: "rgb(var(--edge) / <alpha-value>)",
             },
             backgroundImage: {
-                hero: "url('/src/assets/city.png')",
-                header: "url('/src/assets/header.png')",
-                country: "url('/src/assets/bg-country.png')",
+                hero: "url('/src/assets/backgrounds/city.png')",
+                header: "url('/src/assets/backgrounds/header.png')",
+                country: "url('/src/assets/backgrounds/bg-country.png')",
             },
         },
     },

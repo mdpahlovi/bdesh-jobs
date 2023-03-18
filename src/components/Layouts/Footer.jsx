@@ -1,4 +1,4 @@
-import GooglePlayStore from "../../assets/google-play.svg";
+import GooglePlayStore from "../../assets/logos/google-play.svg";
 import Question from "../../assets/icons/question.png";
 
 const footer_data = [

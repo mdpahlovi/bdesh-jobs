@@ -1,10 +1,12 @@
 import React from "react";
 import CallToAction from "../components/Home/CallToAction";
+import Category from "../components/Home/Category";
 import CountryVacancy from "../components/Home/Hero/CountryVacancy";
 import FindDreamJob from "../components/Home/Hero/FindDreamJob";
 import Slider from "../components/Home/Hero/Slider";
 import JobsInCountry from "../components/Home/JobsInCountry/JobsInCountry";
 import Stats from "../components/Home/Stats";
+import Body from "../layouts/Body";
 
 const Home = () => {
     return (
@@ -18,6 +20,9 @@ const Home = () => {
                 </div>
             </header>
             <Stats />
+            <Body className="mt-32 mb-14">
+                <Category />
+            </Body>
             <JobsInCountry />
             <CallToAction />
         </main>

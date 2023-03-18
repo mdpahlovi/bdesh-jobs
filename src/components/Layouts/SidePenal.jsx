@@ -1,15 +1,20 @@
-import { side_penal_data } from "./Data";
+import { side_penal_data } from "../UserGuides/Data";
 import { HiHome } from "react-icons/hi2";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { IoMdArrowDropright, IoMdArrowDropdown } from "react-icons/io";
 import { Disclosure } from "@headlessui/react";
+import { useLocation } from "react-router-dom";
 
 const SidePenal = () => {
+    const { pathname } = useLocation();
+
     return (
-        <div className="space-y-4">
-            <div className="flex items-center gap-2 box text-primary font-medium">
-                <HiHome size={24} /> হোম
-            </div>
+        <div className="space-y-4 xs:min-w-[16.5rem]">
+            {pathname !== "/" && (
+                <div className="flex items-center gap-2 box text-primary font-medium">
+                    <HiHome size={24} /> হোম
+                </div>
+            )}
             {side_penal_data.map(({ title, details }, index) => (
                 <div key={index} className="box space-y-3">
                     <h4 className="font-bold">{title}</h4>

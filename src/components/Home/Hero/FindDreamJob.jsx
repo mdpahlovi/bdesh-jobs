@@ -31,7 +31,7 @@ const FindDreamJob = () => {
                     <option value="">Select Country</option>
                 </select>
             </div>
-            <button className="bg-[#FBC02D] font-medium">Search</button>
+            <button className="bg-[#FBC02D]">Search</button>
         </div>
     );
 };

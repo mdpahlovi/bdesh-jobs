@@ -22,12 +22,12 @@ const Footer = () => {
                             ))}
                             {category === "Tools & Social Media" && <img src={GooglePlayStore} alt="" />}
                             {category === "Contact Us" && (
-                                <div class="flex gap-2">
+                                <div className="flex gap-2">
                                     <div>
                                         <img src={Question} alt="" />
                                     </div>
                                     <div>
-                                        <p class="-mt-0.5 text-sm font-bold">Call</p>
+                                        <p className="-mt-0.5 text-sm font-bold">Call</p>
                                         <h2 className="-mt-1 text-accent">16479</h2>
                                     </div>
                                 </div>

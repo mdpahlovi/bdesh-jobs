@@ -4,7 +4,7 @@ import Category from "../components/Home/Category";
 import CountryVacancy from "../components/Home/Hero/CountryVacancy";
 import FindDreamJob from "../components/Home/Hero/FindDreamJob";
 import Slider from "../components/Home/Hero/Slider";
-import JobsInCountry from "../components/Home/JobsInCountry/JobsInCountry";
+import JobsInCountry from "../components/Home/JobsInCountry";
 import Stats from "../components/Home/Stats";
 import Body from "../layouts/Body";
 

@@ -1,9 +1,10 @@
 import { Fragment } from "react";
-import { guides_blog_data, relevent_works_data } from "./Data";
+import { guides_blog_data } from "./Data";
+import ReleventWorkSteps from "./ReleventWorkSteps";
 
 const DetailsBlog = () => {
     return (
-        <main className="w-full box p-8">
+        <main className="w-full md:min-w-[424px] lg:min-w-[680px] xl:min-w-[936px] box p-8">
             <div>
                 <h3>বিদেশে যাওয়ার প্রাসঙ্গিক কাজ</h3>
                 <p className="text-sm mt-2.5">
@@ -14,18 +15,8 @@ const DetailsBlog = () => {
                     ক্লিয়ারেন্স কার্ড সংগ্রহ করলেই কর্মজীবি হয়ে বিদেশ যাওয়ার মূল কাজ গুলো সম্পন্ন হবে।
                 </p>
 
-                <div className="mt-10 flex flex-wrap justify-between w-[54rem] overflow-x-auto">
-                    {relevent_works_data.map(({ image, text, link }, index) => (
-                        <div key={index} className="px-4 pb-10 text-center flex flex-col items-center max-w-[10rem]">
-                            <div className="work-icon">
-                                <img src={image} alt="" />
-                            </div>
-                            <p className="mt-1">{index + 1}</p>
-                            <a href={link} className="text-sm">
-                                {text}
-                            </a>
-                        </div>
-                    ))}
+                <div className="mt-10 flex flex-col items-center overflow-x-auto">
+                    <ReleventWorkSteps />
                 </div>
             </div>
             <hr className="my-8" />

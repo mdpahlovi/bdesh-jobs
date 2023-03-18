@@ -1,4 +1,4 @@
-import { jobs_in_country } from "../Datas";
+import { jobs_in_country } from "./Datas";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 

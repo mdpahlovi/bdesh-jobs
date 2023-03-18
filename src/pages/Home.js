@@ -20,7 +20,7 @@ const Home = () => {
                 </div>
             </header>
             <Stats />
-            <Body className="mt-32 mb-14">
+            <Body className="mt-40 sm:mt-32 mb-14">
                 <Category />
             </Body>
             <JobsInCountry />

@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 
 const JobsInCountry = () => {
+    // Swiper Settings
     const params = {
         slidesPerView: 1,
         spaceBetween: 16,

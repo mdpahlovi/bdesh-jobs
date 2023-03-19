@@ -1,6 +1,6 @@
 import React from "react";
 import CallToAction from "../components/Home/CallToAction";
-import Category from "../components/Home/Category";
+import Category from "../components/Home/Category/Category";
 import CountryVacancy from "../components/Home/Hero/CountryVacancy";
 import FindDreamJob from "../components/Home/Hero/FindDreamJob";
 import Slider from "../components/Home/Hero/Slider";

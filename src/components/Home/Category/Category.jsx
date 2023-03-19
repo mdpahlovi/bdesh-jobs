@@ -1,11 +1,15 @@
 import { Tab } from "@headlessui/react";
-import React from "react";
 import { HiTag } from "react-icons/hi2";
-import MakeBio from "../../assets/cta/make-bio.png";
-import SentCV from "../../assets/cta/thousand_cv.png";
-import { generals, spacial_categories } from "./Datas";
+import MakeBio from "../../../assets/cta/make-bio.png";
+import SentCV from "../../../assets/cta/thousand_cv.png";
+import { generals, spacial_categories } from "../Datas";
+import TabPanel from "./TabPanel";
+import { TiArrowSortedDown, TiArrowSortedUp } from "react-icons/ti";
+import { useState } from "react";
 
 const Category = () => {
+    const [isLess, setIsLess] = useState(false);
+
     return (
         <div className="w-full h-max relative">
             <Tab.Group>
@@ -15,27 +19,19 @@ const Category = () => {
                         Category
                     </h2>
                     <Tab.List className="w-64 lg:w-72 whitespace-nowrap bg-background-sec rounded-lg border-2 border-primary grid grid-cols-[auto_auto] lg:grid-cols-2">
-                        <Tab
-                            className={({ selected }) =>
-                                classNames("button w-full rounded rounded-r-none", selected ? "bg-primary text-background-sec" : "text-primary")
-                            }
-                        >
-                            Special skilled
-                        </Tab>
-                        <Tab
-                            className={({ selected }) =>
-                                classNames("button w-full rounded rounded-l-none", selected ? "bg-primary text-background-sec" : "text-primary")
-                            }
-                        >
-                            General
-                        </Tab>
+                        <TabName name="Special skilled" left />
+                        <TabName name="General" />
                     </Tab.List>
                 </div>
                 <Tab.Panels>
-                    <TabPanel array={spacial_categories} />
-                    <TabPanel array={generals} />
+                    <TabPanel array={spacial_categories} isLess={isLess} setIsLess={setIsLess} />
+                    <TabPanel array={generals} isLess={isLess} setIsLess={setIsLess} />
                 </Tab.Panels>
             </Tab.Group>
+            <button onClick={() => setIsLess(!isLess)} className="mt-4 bg-[#FFDC79] w-full shadow grid grid-cols-2 lg:hidden">
+                <span className="text-right -mr-10">{isLess ? "See Less" : "See More"}</span>
+                {isLess ? <TiArrowSortedUp size={24} className="ml-auto" /> : <TiArrowSortedDown size={24} className="ml-auto" />}
+            </button>
             <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <CTACard bgColor="bg-[#036DC5]" image={SentCV}>
                     <p>হাজারো চাকরির মাঝে আপনার পছন্দের চাকরি খুঁজে আবেদন করতে জয়েন করুন আমাদের সাইটে।</p>
@@ -53,27 +49,26 @@ const Category = () => {
 
 export default Category;
 
-// Utilities
+// Utilities For This Component
 const classNames = (...classes) => {
     return classes.filter(Boolean).join(" ");
-};
-const TabPanel = ({ array }) => {
-    return (
-        <Tab.Panel className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4">
-            {array.map(({ image, text }, i) => (
-                <div key={i} className="box flex items-center gap-2">
-                    <img src={image} alt="" />
-                    <h5 className="font-medium">{text}</h5>
-                </div>
-            ))}
-        </Tab.Panel>
-    );
 };
 const LinkButton = ({ link }) => {
     return (
         <a href={link} target="_blank" rel="noreferrer" className="button font-semibold bg-[#FFDC79] text-xs">
             একাউণ্ট খুলুন
         </a>
+    );
+};
+const TabName = ({ name, left }) => {
+    return (
+        <Tab
+            className={({ selected }) =>
+                classNames(`button w-full rounded ${left ? "rounded-r-none" : "rounded-l-none"}`, selected ? "bg-primary text-background-sec" : "text-primary")
+            }
+        >
+            {name}
+        </Tab>
     );
 };
 const CTACard = ({ bgColor, image, children }) => {

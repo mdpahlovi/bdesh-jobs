@@ -15,6 +15,10 @@ import Jordan from "../../assets/country/Jordan.svg";
 import Denmark from "../../assets/country/Denmark.svg";
 import China from "../../assets/country/China.svg";
 
+import { HiUsers } from "react-icons/hi2";
+import { ImWrench } from "react-icons/im";
+import { GiWorld } from "react-icons/gi";
+
 import Electrician from "../../assets/categories/Electrician.png";
 import Mechanic from "../../assets/categories/Mechanic.png";
 import Driver from "../../assets/categories/Driver.png";
@@ -64,6 +68,27 @@ export const jobs_in_country = [
     { image: Jordan, country: "Jordan", vacancy: "1" },
     { image: Denmark, country: "Denmark", vacancy: "1" },
     { image: China, country: "China", vacancy: "1" },
+];
+
+export const stats_data = [
+    {
+        color: "#F44336",
+        title: "No. of vacancies",
+        number: "1281",
+        icon: <HiUsers size={30} />,
+    },
+    {
+        color: "#4CAF50",
+        title: "No. of jobs",
+        number: "31",
+        icon: <ImWrench size={30} />,
+    },
+    {
+        color: "#FF9800",
+        title: "No. of countries",
+        number: "16",
+        icon: <GiWorld size={30} />,
+    },
 ];
 
 export const spacial_categories = [

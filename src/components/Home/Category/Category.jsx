@@ -12,6 +12,7 @@ const Category = () => {
 
     return (
         <div className="w-full h-max relative">
+            {/* Categories Section */}
             <Tab.Group>
                 <div className="absolute -top-28 sm:-top-[4.25rem] w-full flex flex-wrap justify-between gap-4">
                     <h2 className="flex items-center gap-2">
@@ -28,10 +29,12 @@ const Category = () => {
                     <TabPanel array={generals} isLess={isLess} setIsLess={setIsLess} />
                 </Tab.Panels>
             </Tab.Group>
+            {/* Category Length Toggle */}
             <button onClick={() => setIsLess(!isLess)} className="mt-4 bg-[#FFDC79] w-full shadow grid grid-cols-2 lg:hidden">
                 <span className="text-right -mr-10">{isLess ? "See Less" : "See More"}</span>
                 {isLess ? <TiArrowSortedUp size={24} className="ml-auto" /> : <TiArrowSortedDown size={24} className="ml-auto" />}
             </button>
+            {/* Call To Action Section */}
             <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <CTACard bgColor="bg-[#036DC5]" image={SentCV}>
                     <p>হাজারো চাকরির মাঝে আপনার পছন্দের চাকরি খুঁজে আবেদন করতে জয়েন করুন আমাদের সাইটে।</p>
@@ -49,7 +52,7 @@ const Category = () => {
 
 export default Category;
 
-// Utilities For This Component
+// Some Simple Utilities Function For This Component
 const classNames = (...classes) => {
     return classes.filter(Boolean).join(" ");
 };
